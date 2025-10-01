@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MOVIES - TMDB</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo_ul">
+                <h2 style="color: #fff; font-size: 24px; font-weight: bold;">🎬 Movies</h2>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" id="series">Series</a>
+                    </li>
+                    <li>
+                        <a href="#" id="movies">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#">Kids</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_user">
+                <input type="text" placeholder="Search..." id="search_input">
+                <i class="bi bi-person-circle" style="color: #fff; font-size: 24px;"></i>
+                <div class="search">
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h1 id="title">Loading...</h1>
+            <p>Fetching latest movies from TMDB...</p>
+            <div class="details">
+                <h6>Powered by TMDB</h6>
+                <h5 id="gen">Genre</h5>
+                <h4 id="date">Year</h4>
+                <h3 id="rate"><span>TMDB </span><i class="bi bi-star-fill"></i> 0.0</h3>
+            </div>
+            <div class="btns">
+                <a href="#" id="play">Watch <i class="bi bi-play-fill"></i></a>
+                <a href="#" id="download_main"><i class="bi bi-cloud-arrow-down-fill"></i></i></a>
+            </div>
+        </div>
+        <section>
+            <h4>Popular</h4>
+            <i class="bi bi-chevron-left"></i>
+            <i class="bi bi-chevron-right"></i>
+            <div class="cards">
+            </div>
+        </section>
+    </header>
+    <script src="app.js"></script>
+</body>
+</html>
